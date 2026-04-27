@@ -60,7 +60,7 @@ nlp_project1/
 ### 1. Clone Repository
 
 ```python
-!git clone https://github.com/YOUR_ID/nlp_project1.git
+!git clone git@github.com:binisnil/nlp-project1.git
 %cd nlp_project1
 ```
 
