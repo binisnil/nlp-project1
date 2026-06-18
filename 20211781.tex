@@ -51,8 +51,8 @@ Korean review-response pairs and apply LoRA parameter-efficient
 fine-tuning~\cite{lora2022} to Qwen2.5-3B-Instruct.
 Quantitative evaluation on a held-out test set of 6 samples using
 BLEU-4, ROUGE-L, and BERTScore~\cite{bertscore2020} shows that
-fine-tuning improves BERTScore (F1) from 0.7734 to 0.7841 (+0.0107),
-while BLEU-4 slightly decreases (0.3700$\rightarrow$0.3414), indicating
+fine-tuning improves BERTScore (F1) from 0.7819 to 0.7841 (+0.0022),
+while BLEU-4 slightly decreases (0.3548$\rightarrow$0.3414), indicating
 that the model learns to generate more diverse and natural expressions
 rather than reproducing memorized patterns.
 Category-level analysis reveals the largest BERTScore gain in
@@ -415,9 +415,9 @@ identical, a pattern discussed in detail in Section~\ref{sec:discussion}.
 \toprule
 \textbf{Metric} & \textbf{Base} & \textbf{Fine-tuned} & \textbf{$\Delta$} \\
 \midrule
-BLEU-4          & 0.3700 & 0.3414 & $-$0.029 \\
+BLEU-4          & 0.3548 & 0.3414 & $-$0.013 \\
 ROUGE-L         & 0.1667 & 0.1667 & \phantom{$-$}0.000 \\
-BERTScore (F1)  & 0.7734 & 0.7841 & $+$\textbf{0.011} \\
+BERTScore (F1)  & 0.7819 & 0.7841 & $+$\textbf{0.002} \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -562,7 +562,7 @@ combinations to structured system prompt directives, guiding the LLM
 toward contextually appropriate reply behavior.
 
 Quantitative evaluation confirms that LoRA fine-tuning on the expanded
-corpus improves BERTScore by +0.011 (0.7734~$\rightarrow$~0.7841),
+corpus improves BERTScore by +0.002 (0.7819~$\rightarrow$~0.7841),
 with the largest gain observed in the \texttt{service\_complaint}
 category.
 The simultaneous BLEU-4 decrease is interpreted as evidence of
