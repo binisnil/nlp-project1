@@ -89,7 +89,6 @@ training_args = SFTConfig(
     lr_scheduler_type="cosine",
     report_to="none",
     dataset_text_field="text",
-    max_seq_length=512,
 )
 
 trainer = SFTTrainer(
